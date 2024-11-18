@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - Free Fire Tournament</title>
+    <link rel="stylesheet" href="register-styles.css">
+</head>
+<body>
+    <div class="page-container">
+        <header>
+            <div class="logo">Free Fire Tournament</div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section id="register">
+                <h2>Register Now</h2>
+                <form id="registration-form" method="POST" action="https://docs.google.com/forms/d/e/1FAIpQLSdd04V2SPwO_nbsy0-8NJpFR4WlFU96VA4f7JrhJWYtEEkNFA/formResponse" target="hidden_iframe">
+                    <label for="player-name">Player Name:</label>
+                    <input type="text" id="player-name" name="entry.1889877850" required placeholder="Enter your Name">
+
+                    <label for="contact">Email or Mobile Number:</label>
+                    <input type="text" id="contact" name="entry.1068841084" required placeholder="Enter your email or mobile number">
+
+                    <label for="free-fire-id">Free Fire ID:</label>
+                    <input type="text" id="free-fire-id" name="entry.1777533246" required placeholder="Enter your Free Fire ID">
+
+                    <button type="submit">Submit</button>
+                </form>
+            </section>
+        </main>
+
+        <div id="payment-popup" class="popup">
+            <div class="popup-content">
+                <h3>Pay</h3>
+                <img src="Payment.jpeg" alt="Payment Image" class="popup-image">
+                <p>₹30</p>
+                <button id="close-popup">Close</button>
+            </div>
+        </div>
+
+        <div id="payment-confirmation-popup" class="popup">
+            <div class="popup-content">
+                <h3>Have you paid the registration fee of ₹30?</h3>
+                <button id="confirm-yes">Yes</button>
+                <button id="confirm-no">No</button>
+            </div>
+        </div>
+
+        <div id="contact-popup" class="popup">
+            <div class="popup-content">
+                <h3>Contact Details</h3>
+                <p>Please share a screenshot of your payment:</p>
+                <p>9211771021</p>
+                <button id="close-contact-popup">Close</button>
+            </div>
+        </div>
+
+        <footer>
+            <p>Night Riders - Free Fire Tournament.</p>
+        </footer>
+    </div>
+
+    <script src="register-scripts.js"></script>
+    <iframe name="hidden_iframe" style="display:none;"></iframe>
+</body>
+</html>
